@@ -12,7 +12,6 @@ local G2L = {};
 
 -- StarterGui.HousesGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Enabled"] = false;
 G2L["1"]["Name"] = [[HousesGui]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
@@ -25,7 +24,7 @@ G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 171, 0);
 G2L["2"]["ZIndex"] = 2;
 G2L["2"]["AnchorPoint"] = Vector2.new(0, 0.5);
-G2L["2"]["Image"] = [[rbxassetid://79237780308815]];
+G2L["2"]["Image"] = [[rbxassetid://138934997817024]];
 G2L["2"]["Size"] = UDim2.new(0.08587, 0, 0.16284, 0);
 G2L["2"]["Name"] = [[PIzzaButton]];
 G2L["2"]["Position"] = UDim2.new(0.00644, 0, 0.47765, 0);
@@ -42,9 +41,9 @@ G2L["4"]["Thickness"] = 6;
 G2L["4"]["Color"] = Color3.fromRGB(85, 85, 85);
 
 
--- StarterGui.HousesGui.PIzzaButton.Script
+-- StarterGui.HousesGui.PIzzaButton.ButtonScript
 G2L["5"] = Instance.new("LocalScript", G2L["2"]);
-G2L["5"]["Name"] = [[Script]];
+G2L["5"]["Name"] = [[ButtonScript]];
 
 
 -- StarterGui.HousesGui.PIzzaButton.UIAspectRatioConstraint
@@ -104,7 +103,7 @@ G2L["d"] = Instance.new("ImageLabel", G2L["b"]);
 G2L["d"]["BorderSizePixel"] = 0;
 G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 -- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["d"]["Image"] = [[rbxassetid://110874508915960]];
+G2L["d"]["Image"] = [[rbxassetid://120687882008962]];
 G2L["d"]["Size"] = UDim2.new(0.10397, 0, 1.08, 0);
 G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["d"]["BackgroundTransparency"] = 1;
@@ -429,7 +428,7 @@ G2L["32"] = Instance.new("LocalScript", G2L["30"]);
 G2L["32"]["Name"] = [[C3Script]];
 
 
--- StarterGui.HousesGui.PIzzaButton.Script
+-- StarterGui.HousesGui.PIzzaButton.ButtonScript
 local function C_5()
 local script = G2L["5"];
 	PizzaButton = script.Parent
@@ -447,28 +446,22 @@ task.spawn(C_5);
 -- StarterGui.HousesGui.MainFrame.A1.A1Script
 local function C_11()
 local script = G2L["11"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(196.61232, 3.4003582, -467.82193, 0.994181633, 8.15006089e-08, 0.107716478, -8.07942655e-08, 1, -1.09215996e-08, -0.107716478, 2.15518003e-09, 0.994181633)
 	
 	A1 = script.Parent
 	A1.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 end;
 task.spawn(C_11);
 -- StarterGui.HousesGui.MainFrame.A2.A2Script
 local function C_14()
 local script = G2L["14"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(198.203613, 3.40041113, -643.848816, 0.999883354, -2.63179185e-08, -0.0152745461, 2.6620647e-08, 1, 1.96158449e-08, 0.0152745461, -2.00201757e-08, 0.999883354)
 	
 	A2 = script.Parent
 	A2.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -476,14 +469,11 @@ task.spawn(C_14);
 -- StarterGui.HousesGui.MainFrame.A3.A3Script
 local function C_17()
 local script = G2L["17"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(198.297424, 3.40040541, -823.220581, 0.99998939, -9.96824383e-08, -0.00461093942, 9.97846499e-08, 1, 2.19373195e-08, 0.00461093942, -2.23971881e-08, 0.99998939)
 	
 	A3 = script.Parent
 	A3.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -491,14 +481,11 @@ task.spawn(C_17);
 -- StarterGui.HousesGui.MainFrame.B1.B1Script
 local function C_1a()
 local script = G2L["1a"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(-30.6773319, 3.48016381, -432.285583, -0.0197541006, 4.50715021e-08, 0.999804854, -4.73242281e-08, 1, -4.60153267e-08, -0.999804854, -4.82239848e-08, -0.0197541006)
 	
 	B1 = script.Parent
 	B1.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -506,14 +493,11 @@ task.spawn(C_1a);
 -- StarterGui.HousesGui.MainFrame.B2.B2Script
 local function C_1d()
 local script = G2L["1d"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(41.1639671, 3.40029836, -486.121277, 0.0311224777, 1.71782446e-08, -0.999515593, 9.72118031e-08, 1, 2.02135091e-08, 0.999515593, -9.77938086e-08, 0.0311224777)
 	
 	B2 = script.Parent
 	B2.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -521,14 +505,11 @@ task.spawn(C_1d);
 -- StarterGui.HousesGui.MainFrame.B4.B4Script
 local function C_20()
 local script = G2L["20"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(40.7678452, 3.40031767, -666.00647, -0.0170943029, 8.22175821e-08, -0.999853909, 6.0624771e-08, 1, 8.11931073e-08, 0.999853909, -5.92279719e-08, -0.0170943029)
 	
 	B4 = script.Parent
 	B4.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -536,14 +517,11 @@ task.spawn(C_20);
 -- StarterGui.HousesGui.MainFrame.B3.B3Script
 local function C_23()
 local script = G2L["23"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(-29.7440834, 3.40010023, -611.86084, 0.00468484405, 1.29319533e-08, 0.999989033, -1.86278584e-08, 1, -1.28448256e-08, -0.999989033, -1.85674782e-08, 0.00468484405)
 	
 	B3 = script.Parent
 	B3.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -551,14 +529,11 @@ task.spawn(C_23);
 -- StarterGui.HousesGui.MainFrame.C1.C1Script
 local function C_26()
 local script = G2L["26"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(-186.823441, 3.40001273, -443.914215, -0.00351604493, 5.01550907e-08, 0.999993801, -3.96179942e-08, 1, -5.02947017e-08, -0.999993801, -3.9794589e-08, -0.00351604493)
 		
 	C1 = script.Parent
 	C1.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -566,14 +541,11 @@ task.spawn(C_26);
 -- StarterGui.HousesGui.MainFrame.C2.C2Script
 local function C_29()
 local script = G2L["29"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(-194.223068, 3.40006328, -616.107788, -0.0570121445, -2.84323267e-08, 0.998373508, -2.13455351e-08, 1, 2.72597092e-08, -0.998373508, -1.97566816e-08, -0.0570121445)
 	
 	C2 = script.Parent
 	C2.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -581,14 +553,11 @@ task.spawn(C_29);
 -- StarterGui.HousesGui.MainFrame.B5.B5Script
 local function C_2c()
 local script = G2L["2c"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(-30.0863953, 3.40010381, -800.033936, -0.0234531481, -7.93633816e-08, 0.999724925, 2.65073918e-08, 1, 8.00070694e-08, -0.999724925, 2.83765189e-08, -0.0234531481)
 	
 	B5 = script.Parent
 	B5.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -596,14 +565,11 @@ task.spawn(C_2c);
 -- StarterGui.HousesGui.MainFrame.B6.B6Script
 local function C_2f()
 local script = G2L["2f"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(34.2339439, 3.4003582, -835.953735, -0.0104107959, -3.0366671e-08, -0.999945819, -9.55417363e-08, 1, -2.93735969e-08, 0.999945819, 9.52307602e-08, -0.0104107959)
 	
 	B6 = script.Parent
 	B6.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
@@ -611,14 +577,11 @@ task.spawn(C_2f);
 -- StarterGui.HousesGui.MainFrame.C3.C3Script
 local function C_32()
 local script = G2L["32"];
-	local plr = game.Players.LocalPlayer
-	local ch = plr.Character
-	local hrp = ch:WaitForChild("HumanoidRootPart")
 	local housepos = Vector3.new(-194.367172, 3.40013242, -799.802856, 0.012725438, -3.1719626e-08, 0.999919057, 2.75382828e-08, 1, 3.13717301e-08, -0.999919057, 2.71368332e-08, 0.012725438)
 	
 	C3 = script.Parent
 	C3.MouseButton1Click:Connect(function()
-		hrp.CFrame = CFrame.new(housepos)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(housepos)
 	end)
 	
 end;
