@@ -450,13 +450,11 @@ local script = G2L["11"];
 	
 	local A1 = script.Parent
 	A1.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 end;
@@ -468,13 +466,11 @@ local script = G2L["14"];
 	
 	local A2 = script.Parent
 	A2.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -487,13 +483,11 @@ local script = G2L["17"];
 	
 	local A3 = script.Parent
 	A3.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -506,13 +500,11 @@ local script = G2L["1a"];
 	
 	local B1 = script.Parent
 	B1.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -525,13 +517,11 @@ local script = G2L["1d"];
 	
 	local B2 = script.Parent
 	B2.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -544,13 +534,11 @@ local script = G2L["20"];
 	
 	local B4 = script.Parent
 	B4.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -563,13 +551,11 @@ local script = G2L["23"];
 	
 	local B3 = script.Parent
 	B3.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -582,13 +568,11 @@ local script = G2L["26"];
 		
 	local C1 = script.Parent
 	C1.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -601,13 +585,11 @@ local script = G2L["29"];
 	
 	local C2 = script.Parent
 	C2.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -620,13 +602,11 @@ local script = G2L["2c"];
 	
 	local B5 = script.Parent
 	B5.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -639,13 +619,11 @@ local script = G2L["2f"];
 	
 	local B6 = script.Parent
 	B6.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
@@ -658,13 +636,11 @@ local script = G2L["32"];
 	
 	local C3 = script.Parent
 	C3.MouseButton1Click:Connect(function()
-		local ch = game.Players.LocalPlayer.Character
-		local hrp = ch:FindFirstChild("HumanoidRootPart")
-		local ts = ch:FindFirstChild("Torso")
+		local plr = game.Players.LocalPlayer
+		local ch = plr.Character or plr.CharacterAdded:Wait()
+		local hrp = ch:FindFirstChild("HumanoidRootPart") or ch:FindFirstChild("Torso")
 		if hrp then
 			hrp.CFrame = housepos
-		elseif ts then
-			ts.CFrame = housepos
 		end
 	end)
 	
