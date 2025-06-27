@@ -11,7 +11,7 @@
 local G2L = {};
 
 -- StarterGui.HousesGui
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
 G2L["1"]["Name"] = [[HousesGui]];
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
@@ -57,7 +57,7 @@ G2L["7"]["Visible"] = false;
 G2L["7"]["ZIndex"] = 200;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 171, 0);
 G2L["7"]["Size"] = UDim2.new(0.44184, 0, 0.52145, 0);
-G2L["7"]["Position"] = UDim2.new(0.15906, 0, 0.26222, 0);
+G2L["7"]["Position"] = UDim2.new(0.12773, 0, 0.31, 0);
 G2L["7"]["Name"] = [[MainFrame]];
 
 
